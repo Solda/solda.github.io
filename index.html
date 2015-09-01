@@ -29,10 +29,12 @@
         <!-- Leo's Design -->
         <link rel="stylesheet" href="css/main.css">
 
-        <!-- jquery + 動態背景色 -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-        <script src="js/jquery.adaptive-backgrounds.js"></script>
-        <script src="js/effect.js"></script>
+        <!-- Android Binding -->
+        <script type="text/javascript">
+           function showAndroidToast(toast) {
+               Android.showToast(toast);
+           }
+        </script>
 
     </head>
     <body>
@@ -52,63 +54,99 @@
               <a href="/" class="logo"><img src="img/logo2.svg" alt=""></a>
             </div>
 
-            <script type="text/javascript">
-   function showAndroidToast(toast) {
-       Android.showToast(toast);
-   }
-</script>
+            <!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col mdl-cell--12-col-phone mdl-cell--12-col-tablet">
-  <div class="mdl-card__title">
-    <h1 class="mdl-card__title-text">Android Test</h1>
-  </div>
-  <div class="mdl-card__actions mdl-card--border">
-    <input type="button" value="Say hello" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" onClick="showAndroidToast('Hello Android!')" />
-    <input type="button" value="Yllan's Store" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" onClick="Android.showStore(12);" />
-    <input type="button" value="Product" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" onClick="Android.showProduct(10566);" />
+        <!-- Add to homescreen for Chrome on Android -->
+        <meta name="mobile-web-app-capable" content="yes">
+        <link rel="icon" sizes="192x192" href="images/touch/chrome-touch-icon-192x192.png">
 
-  </div>
+        <!-- Add to homescreen for Safari on iOS -->
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta name="apple-mobile-web-app-title" content="Material Design Lite">
+        <link rel="apple-touch-icon-precomposed" href="apple-touch-icon-precomposed.png">
 
-</div>
+        <!-- Tile icon for Win8 (144x144 + tile color) -->
+        <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
+        <meta name="msapplication-TileColor" content="#3372DF">
+
+        <!-- Material Design -->
+        <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.4/material.blue_grey-pink.min.css" /> 
+        <script src="https://storage.googleapis.com/code.getmdl.io/1.0.2/material.min.js"></script>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+        <!-- Leo's Design -->
+        <link rel="stylesheet" href="css/main.css">
+
+        <!-- Android Binding -->
+        <script type="text/javascript">
+           function showAndroidToast(toast) {
+               Android.showToast(toast);
+           }
+        </script>
+
+    </head>
+    <body>
+
+      <div class="mdl-layout__container big-bg">
+
+        <div class="mdl-layout mdl-js-layout">
 
 
-<!-- Android Test -->
+          <!-- 內容 -->
+          <main class="mdl-layout__container">
 
-<div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--8-col mdl-cell--12-col-phone mdl-cell--5-col-tablet product full-card" style="background: url('https://solda-production.s3-ap-northeast-1.amazonaws.com/uploads/image/image/7972/medium_thumb_c3fdd1c2b71d80975ae8e6a8a139cb.jpg') center center no-repeat; background-size: cover;">
+
+            <div class="mdl-grid main-content">
+
+            <div class="mdl-cell mdl-cell--12-col">
+              <a href="/" class="logo"><img src="img/logo2.svg" alt=""></a>
+            </div>
+
+            <div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--8-col mdl-cell--12-col-phone mdl-cell--8-col-tablet product full-card" style="background: url('https://solda-production.s3-ap-northeast-1.amazonaws.com/uploads/image/image/90523/medium_thumb_a69df808d105613831be46cda2f45f.jpg') center center no-repeat; background-size: cover;">
   <div class="mdl-card__media product-image">
-    <a href="https://solda.io/products/2115">
+    <a href="https://solda.io/products/25432">
       <div class="mdl-card__title">
-        <h1 class="mdl-card__title-text mdl-color-text--white">雲月箸置 筷架</h1>
+        <h1 class="mdl-card__title-text mdl-color-text--white">我最愛の豆豆龍</h1>
       </div>
     </a>
   </div>
   <div class="mdl-card__supporting-text">
-    <a href="https://solda.io/diese-diese" class="avatar">
-      <img src="https://solda-production.s3-ap-northeast-1.amazonaws.com/uploads/store/avatar/253/square_large_2ec0183591c3b9e079a43031d922de.png" alt="">
+    <a href="https://solda.io/mow3" class="avatar">
+      <img src="https://solda-production.s3-ap-northeast-1.amazonaws.com/uploads/store/avatar/3576/square_large_f719dfec82e1b2dfa547902566ced1.jpg">
       <div>
-        <strong>台灣diese-diese 雜貨研究所</strong><br/>
-        <span>@diese-diese</span>
+        <strong>貓三餅鋪</strong><br/>
+        <span>@mow3</span>
       </div>
     </a>
   </div>
 </div>
+
+
 
 <div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col mdl-cell--12-col-phone mdl-cell--3-col-tablet intro-card">
   <div class="mdl-card__media product-image">
     <div class="issue-number">
       <div class="vertical-center">
-        <span>WEEK #01</span><br/>
-        兔兔爭霸你該知道的十件商品
+        <span>中秋月圓人團圓，手打給你好人緣，本期募集關鍵字...</span><br/>
+        #中秋月圓
       </div>
     </div>
   </div>
   <div class="mdl-card__supporting-text">
-    每週好物更新，保證不濫發，可在瀏覽器設定裡隨時取消。
+    說到中秋節，你會想到什麼呢？是月亮、兔子、還是烤肉大會？現在就上傳你認為適合中秋節的商品，產品描述裡加上「#中秋月圓」，就有機會入選手打拍賣精選商品！
   </div>
 </div>
 
 
-<div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--6-col mdl-cell--12-col-phone mdl-cell--8-col-tablet product full-card" style="background: url('https://solda-production.s3-ap-northeast-1.amazonaws.com/uploads/image/image/83739/medium_thumb_eefef993be23772476adfa3a787f22.jpg') center center no-repeat; background-size: cover;">
+<div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col mdl-cell--12-col-phone mdl-cell--8-col-tablet product full-card" style="background: url('https://solda-production.s3-ap-northeast-1.amazonaws.com/uploads/image/image/83739/medium_thumb_eefef993be23772476adfa3a787f22.jpg') center center no-repeat; background-size: cover;">
   <div class="mdl-card__media product-image">
     <a href="https://solda.io/products/23596">
       <div class="mdl-card__title">
@@ -130,7 +168,7 @@
 
 
 
-<div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--6-col mdl-cell--12-col-phone mdl-cell--8-col-tablet product full-card" style="background: url('https://solda-production.s3-ap-northeast-1.amazonaws.com/uploads/image/image/84072/medium_thumb_fe04de1e4079c6dda85ebafa371960.jpg') center center no-repeat; background-size: cover;">
+<div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--8-col mdl-cell--2-col-phone mdl-cell--8-col-tablet product full-card" style="background: url('https://solda-production.s3-ap-northeast-1.amazonaws.com/uploads/image/image/84072/medium_thumb_fe04de1e4079c6dda85ebafa371960.jpg') center center no-repeat; background-size: cover;">
   <div class="mdl-card__media product-image">
     <a href="https://solda.io/products/23671">
       <div class="mdl-card__title">
@@ -149,11 +187,11 @@
   </div>
 </div>
 
-<div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--6-col mdl-cell--12-col-phone mdl-cell--8-col-tablet product full-card" style="background: url('https://solda-production.s3-ap-northeast-1.amazonaws.com/uploads/image/image/20728/medium_thumb_ae487f660365ac783872d66a5245ab.jpg') center center no-repeat; background-size: cover;">
+<div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--8-col mdl-cell--2-col-phone mdl-cell--8-col-tablet product full-card" style="background: url('https://solda-production.s3-ap-northeast-1.amazonaws.com/uploads/image/image/20728/medium_thumb_ae487f660365ac783872d66a5245ab.jpg') center center no-repeat; background-size: cover;">
   <div class="mdl-card__media product-image">
     <a href="https://solda.io/products/5518">
       <div class="mdl-card__title">
-        <h1 class="mdl-card__title-text mdl-color-text--white">/ 動物園好朋友 / 阿南白兔方形午安枕 抱枕</h1>
+        <h1 class="mdl-card__title-text mdl-color-text--white">阿南白兔方形午安枕</h1>
       </div>
     </a>
   </div>
@@ -168,28 +206,27 @@
   </div>
 </div>
 
-<div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--6-col mdl-cell--12-col-phone mdl-cell--8-col-tablet product full-card" style="background: url('https://solda-production.s3-ap-northeast-1.amazonaws.com/uploads/image/image/90523/medium_thumb_a69df808d105613831be46cda2f45f.jpg') center center no-repeat; background-size: cover;">
+
+<div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col mdl-cell--12-col-phone mdl-cell--5-col-tablet product full-card" style="background: url('https://solda-production.s3-ap-northeast-1.amazonaws.com/uploads/image/image/7972/medium_thumb_c3fdd1c2b71d80975ae8e6a8a139cb.jpg') center center no-repeat; background-size: cover;">
   <div class="mdl-card__media product-image">
-    <a href="https://solda.io/products/25432">
+    <a href="https://solda.io/products/2115">
       <div class="mdl-card__title">
-        <h1 class="mdl-card__title-text mdl-color-text--white">我最愛の豆豆龍</h1>
+        <h1 class="mdl-card__title-text mdl-color-text--white">雲月箸置 筷架</h1>
       </div>
     </a>
   </div>
   <div class="mdl-card__supporting-text">
-    <a href="https://solda.io/mow3" class="avatar">
-      <img src="https://solda-production.s3-ap-northeast-1.amazonaws.com/uploads/store/avatar/3576/square_large_f719dfec82e1b2dfa547902566ced1.jpg">
+    <a href="https://solda.io/diese-diese" class="avatar">
+      <img src="https://solda-production.s3-ap-northeast-1.amazonaws.com/uploads/store/avatar/253/square_large_2ec0183591c3b9e079a43031d922de.png" alt="">
       <div>
-        <strong>貓三餅鋪</strong><br/>
-        <span>@mow3</span>
+        <strong>台灣diese-diese 雜貨研究所</strong><br/>
+        <span>@diese-diese</span>
       </div>
     </a>
   </div>
 </div>
 
-
-
-<div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--6-col mdl-cell--12-col-phone mdl-cell--8-col-tablet product full-card" style="background: url('https://solda-production.s3-ap-northeast-1.amazonaws.com/uploads/image/image/14082/medium_thumb_e31df6ca67b7e6390cb4e019f9a614.jpg') center center no-repeat; background-size: cover;">
+<div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col mdl-cell--12-col-phone mdl-cell--8-col-tablet product full-card" style="background: url('https://solda-production.s3-ap-northeast-1.amazonaws.com/uploads/image/image/14082/medium_thumb_e31df6ca67b7e6390cb4e019f9a614.jpg') center center no-repeat; background-size: cover;">
   <div class="mdl-card__media product-image">
     <a href="https://solda.io/products/3676">
       <div class="mdl-card__title">
@@ -208,7 +245,7 @@
   </div>
 </div>
 
-<div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--6-col mdl-cell--12-col-phone mdl-cell--8-col-tablet product full-card" style="background: url('https://solda-production.s3-ap-northeast-1.amazonaws.com/uploads/image/image/36307/medium_thumb_e31df6ca67b7e6390cb4e019f9a614.jpg') center center no-repeat; background-size: cover;">
+<div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--8-col mdl-cell--12-col-phone mdl-cell--8-col-tablet product full-card" style="background: url('https://solda-production.s3-ap-northeast-1.amazonaws.com/uploads/image/image/36307/medium_thumb_e31df6ca67b7e6390cb4e019f9a614.jpg') center center no-repeat; background-size: cover;">
   <div class="mdl-card__media product-image">
     <a href="https://solda.io/products/10226">
       <div class="mdl-card__title">
@@ -230,7 +267,7 @@
 
 
 
-<div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--6-col mdl-cell--12-col-phone mdl-cell--8-col-tablet product full-card" style="background: url('https://solda-production.s3-ap-northeast-1.amazonaws.com/uploads/image/image/23193/medium_thumb_081f78d1e167a945667b000be31579.JPG') center center no-repeat; background-size: cover;">
+<div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--8-col mdl-cell--12-col-phone mdl-cell--8-col-tablet product full-card" style="background: url('https://solda-production.s3-ap-northeast-1.amazonaws.com/uploads/image/image/23193/medium_thumb_081f78d1e167a945667b000be31579.JPG') center center no-repeat; background-size: cover;">
   <div class="mdl-card__media product-image">
     <a href="https://solda.io/products/6297">
       <div class="mdl-card__title">
@@ -251,7 +288,7 @@
 
 
 
-<div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--6-col mdl-cell--12-col-phone mdl-cell--8-col-tablet product full-card" style="background: url('https://solda-production.s3-ap-northeast-1.amazonaws.com/uploads/image/image/46850/medium_thumb_f44e4fe3499ac7b5805e5566d9ceaf.jpg') center center no-repeat; background-size: cover;">
+<div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col mdl-cell--12-col-phone mdl-cell--8-col-tablet product full-card" style="background: url('https://solda-production.s3-ap-northeast-1.amazonaws.com/uploads/image/image/46850/medium_thumb_f44e4fe3499ac7b5805e5566d9ceaf.jpg') center center no-repeat; background-size: cover;">
   <div class="mdl-card__media product-image">
     <a href="https://solda.io/products/13287">
       <div class="mdl-card__title">
@@ -273,11 +310,11 @@
 
 
 
-<div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--6-col mdl-cell--12-col-phone mdl-cell--8-col-tablet product full-card" style="background: url('https://solda-production.s3-ap-northeast-1.amazonaws.com/uploads/image/image/20064/medium_thumb_1e0dbede941fe35c6db8736183b0dc.jpg') center center no-repeat; background-size: cover;">
+<div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col mdl-cell--12-col-phone mdl-cell--8-col-tablet product full-card" style="background: url('https://solda-production.s3-ap-northeast-1.amazonaws.com/uploads/image/image/20064/medium_thumb_1e0dbede941fe35c6db8736183b0dc.jpg') center center no-repeat; background-size: cover;">
   <div class="mdl-card__media product-image">
     <a href="https://solda.io/products/5357">
       <div class="mdl-card__title">
-        <h1 class="mdl-card__title-text mdl-color-text--white">美國燒烤神器！方形大網籃（獨家黑色版）</h1>
+        <h1 class="mdl-card__title-text mdl-color-text--white">美國燒烤神器！方形大網籃</h1>
       </div>
     </a>
   </div>
@@ -293,7 +330,7 @@
 </div>
 
 
-<div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--6-col mdl-cell--12-col-phone mdl-cell--8-col-tablet product full-card" style="background: url('https://solda-production.s3-ap-northeast-1.amazonaws.com/uploads/image/image/84462/medium_thumb_e31df6ca67b7e6390cb4e019f9a614.jpg') center center no-repeat; background-size: cover;">
+<div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--8-col mdl-cell--12-col-phone mdl-cell--8-col-tablet product full-card" style="background: url('https://solda-production.s3-ap-northeast-1.amazonaws.com/uploads/image/image/84462/medium_thumb_e31df6ca67b7e6390cb4e019f9a614.jpg') center center no-repeat; background-size: cover;">
   <div class="mdl-card__media product-image">
     <a href="https://solda.io/products/23773">
       <div class="mdl-card__title">
@@ -313,7 +350,7 @@
 </div>
 
 
-<div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--6-col mdl-cell--12-col-phone mdl-cell--8-col-tablet product full-card" style="background: url('https://solda-production.s3-ap-northeast-1.amazonaws.com/uploads/image/image/42842/medium_thumb_2d8ebf60c78f015a6806c4c7d1d289.jpg') center center no-repeat; background-size: cover;">
+<div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--8-col mdl-cell--12-col-phone mdl-cell--8-col-tablet product full-card" style="background: url('https://solda-production.s3-ap-northeast-1.amazonaws.com/uploads/image/image/42842/medium_thumb_2d8ebf60c78f015a6806c4c7d1d289.jpg') center center no-repeat; background-size: cover;">
   <div class="mdl-card__media product-image">
     <a href="https://solda.io/products/12159">
       <div class="mdl-card__title">
@@ -335,7 +372,7 @@
 
 
 
-<div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--6-col mdl-cell--12-col-phone mdl-cell--8-col-tablet product full-card" style="background: url('https://solda-production.s3-ap-northeast-1.amazonaws.com/uploads/image/image/58085/medium_thumb_14ec237fca5b51410fdafafaac624a.jpg') center center no-repeat; background-size: cover;">
+<div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col mdl-cell--12-col-phone mdl-cell--8-col-tablet product full-card" style="background: url('https://solda-production.s3-ap-northeast-1.amazonaws.com/uploads/image/image/58085/medium_thumb_14ec237fca5b51410fdafafaac624a.jpg') center center no-repeat; background-size: cover;">
   <div class="mdl-card__media product-image">
     <a href="https://solda.io/products/16361">
       <div class="mdl-card__title">
@@ -357,11 +394,11 @@
 
 
 
-<div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--6-col mdl-cell--12-col-phone mdl-cell--8-col-tablet product full-card" style="background: url('https://solda-production.s3-ap-northeast-1.amazonaws.com/uploads/image/image/49682/medium_thumb_4ddf3db71c302938cc2e0daa848cd4.jpg') center center no-repeat; background-size: cover;">
+<div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col mdl-cell--12-col-phone mdl-cell--8-col-tablet product full-card" style="background: url('https://solda-production.s3-ap-northeast-1.amazonaws.com/uploads/image/image/49682/medium_thumb_4ddf3db71c302938cc2e0daa848cd4.jpg') center center no-repeat; background-size: cover;">
   <div class="mdl-card__media product-image">
     <a href="https://solda.io/products/13987">
       <div class="mdl-card__title">
-        <h1 class="mdl-card__title-text mdl-color-text--white">鑽繡荷包(口金包)</h1>
+        <h1 class="mdl-card__title-text mdl-color-text--white">手作項鍊：鑽繡荷包</h1>
       </div>
     </a>
   </div>
@@ -379,7 +416,7 @@
 
 
 
-<div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--6-col mdl-cell--12-col-phone mdl-cell--8-col-tablet product full-card" style="background: url('https://solda-production.s3-ap-northeast-1.amazonaws.com/uploads/image/image/51058/medium_thumb_84f3156144a81a0d9a20033756790d.jpg') center center no-repeat; background-size: cover;">
+<div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--8-col mdl-cell--12-col-phone mdl-cell--8-col-tablet product full-card" style="background: url('https://solda-production.s3-ap-northeast-1.amazonaws.com/uploads/image/image/51058/medium_thumb_84f3156144a81a0d9a20033756790d.jpg') center center no-repeat; background-size: cover;">
   <div class="mdl-card__media product-image">
     <a href="https://solda.io/products/14387">
       <div class="mdl-card__title">
@@ -401,7 +438,7 @@
 
 
 
-<div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--6-col mdl-cell--12-col-phone mdl-cell--8-col-tablet product full-card" style="background: url('https://solda-production.s3-ap-northeast-1.amazonaws.com/uploads/image/image/23848/medium_thumb_e31df6ca67b7e6390cb4e019f9a614.jpg') center center no-repeat; background-size: cover;">
+<div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--8-col mdl-cell--12-col-phone mdl-cell--8-col-tablet product full-card" style="background: url('https://solda-production.s3-ap-northeast-1.amazonaws.com/uploads/image/image/23848/medium_thumb_e31df6ca67b7e6390cb4e019f9a614.jpg') center center no-repeat; background-size: cover;">
   <div class="mdl-card__media product-image">
     <a href="https://solda.io/products/6539">
       <div class="mdl-card__title">
@@ -422,11 +459,11 @@
 
 
 
-<div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--6-col mdl-cell--12-col-phone mdl-cell--8-col-tablet product full-card" style="background: url('https://solda-production.s3-ap-northeast-1.amazonaws.com/uploads/image/image/80756/medium_thumb_9199ff8ce188a3a533cadae6c4be93.jpg') center center no-repeat; background-size: cover;">
+<div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col mdl-cell--12-col-phone mdl-cell--8-col-tablet product full-card" style="background: url('https://solda-production.s3-ap-northeast-1.amazonaws.com/uploads/image/image/80756/medium_thumb_9199ff8ce188a3a533cadae6c4be93.jpg') center center no-repeat; background-size: cover;">
   <div class="mdl-card__media product-image">
     <a href="https://solda.io/products/22726">
       <div class="mdl-card__title">
-        <h1 class="mdl-card__title-text">鍍24K金邊紫水晶項鏈(B)</h1>
+        <h1 class="mdl-card__title-text">礦石系列 - 鍍24K金邊紫水晶項鏈</h1>
       </div>
     </a>
   </div>
@@ -444,11 +481,11 @@
 
 
 
-<div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--6-col mdl-cell--12-col-phone mdl-cell--8-col-tablet product full-card" style="background: url('https://solda-production.s3-ap-northeast-1.amazonaws.com/uploads/image/image/70477/medium_thumb_5c83489a233c196233de5659e62462.jpg') center center no-repeat; background-size: cover;">
+<div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col mdl-cell--12-col-phone mdl-cell--8-col-tablet product full-card" style="background: url('https://solda-production.s3-ap-northeast-1.amazonaws.com/uploads/image/image/70477/medium_thumb_5c83489a233c196233de5659e62462.jpg') center center no-repeat; background-size: cover;">
   <div class="mdl-card__media product-image">
     <a href="https://solda.io/products/19806">
       <div class="mdl-card__title">
-        <h1 class="mdl-card__title-text mdl-color-text--white">等等 [ deng x deng ] 日本帶回 簡約一大點 陶瓷中小型灰盤</h1>
+        <h1 class="mdl-card__title-text mdl-color-text--white">簡約一大點 陶瓷中小型灰盤</h1>
       </div>
     </a>
   </div>
@@ -466,7 +503,7 @@
 
 
 
-<div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--6-col mdl-cell--12-col-phone mdl-cell--8-col-tablet product full-card" style="background: url('https://solda-production.s3-ap-northeast-1.amazonaws.com/uploads/image/image/28697/medium_thumb_38b3c448f3d304dc9bc0d50a2db164.jpg') center center no-repeat; background-size: cover;">
+<div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--8-col mdl-cell--12-col-phone mdl-cell--8-col-tablet product full-card" style="background: url('https://solda-production.s3-ap-northeast-1.amazonaws.com/uploads/image/image/28697/medium_thumb_38b3c448f3d304dc9bc0d50a2db164.jpg') center center no-repeat; background-size: cover;">
   <div class="mdl-card__media product-image">
     <a href="https://solda.io/products/8034">
       <div class="mdl-card__title">
@@ -488,11 +525,11 @@
 
 
 
-<div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--6-col mdl-cell--12-col-phone mdl-cell--8-col-tablet product full-card" style="background: url('https://solda-production.s3-ap-northeast-1.amazonaws.com/uploads/image/image/28501/medium_thumb_890b1e4b6576baaf55d7ca552e943c.jpg') center center no-repeat; background-size: cover;">
+<div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--8-col mdl-cell--12-col-phone mdl-cell--8-col-tablet product full-card" style="background: url('https://solda-production.s3-ap-northeast-1.amazonaws.com/uploads/image/image/28501/medium_thumb_890b1e4b6576baaf55d7ca552e943c.jpg') center center no-repeat; background-size: cover;">
   <div class="mdl-card__media product-image">
     <a href="https://solda.io/products/7956">
       <div class="mdl-card__title">
-        <h1 class="mdl-card__title-text">月光 MoonBeam 空間擴香精油 120ml</h1>
+        <h1 class="mdl-card__title-text">【Demeter氣味圖書館】月光 MoonBeam 空間擴香精油</h1>
       </div>
     </a>
   </div>
@@ -510,7 +547,7 @@
 
 
 
-<div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--6-col mdl-cell--12-col-phone mdl-cell--8-col-tablet product full-card" style="background: url('https://solda-production.s3-ap-northeast-1.amazonaws.com/uploads/image/image/29237/medium_thumb_a8e73b2ac675407566d3bb3d873434.jpg') center center no-repeat; background-size: cover;">
+<div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col mdl-cell--12-col-phone mdl-cell--8-col-tablet product full-card" style="background: url('https://solda-production.s3-ap-northeast-1.amazonaws.com/uploads/image/image/29237/medium_thumb_a8e73b2ac675407566d3bb3d873434.jpg') center center no-repeat; background-size: cover;">
   <div class="mdl-card__media product-image">
     <a href="https://solda.io/products/8178">
       <div class="mdl-card__title">
@@ -532,7 +569,7 @@
 
 
 
-<div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--6-col mdl-cell--12-col-phone mdl-cell--8-col-tablet product full-card" style="background: url('https://solda-production.s3-ap-northeast-1.amazonaws.com/uploads/image/image/57716/medium_thumb_e31df6ca67b7e6390cb4e019f9a614.jpg') center center no-repeat; background-size: cover;">
+<div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col mdl-cell--12-col-phone mdl-cell--8-col-tablet product full-card" style="background: url('https://solda-production.s3-ap-northeast-1.amazonaws.com/uploads/image/image/57716/medium_thumb_e31df6ca67b7e6390cb4e019f9a614.jpg') center center no-repeat; background-size: cover;">
   <div class="mdl-card__media product-image">
     <a href="https://solda.io/products/16258">
       <div class="mdl-card__title">
@@ -554,7 +591,7 @@
 
 
 
-<div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--6-col mdl-cell--12-col-phone mdl-cell--8-col-tablet product full-card" style="background: url('https://solda-production.s3-ap-northeast-1.amazonaws.com/uploads/image/image/24923/medium_thumb_e31df6ca67b7e6390cb4e019f9a614.jpg') center center no-repeat; background-size: cover;">
+<div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--8-col mdl-cell--12-col-phone mdl-cell--8-col-tablet product full-card" style="background: url('https://solda-production.s3-ap-northeast-1.amazonaws.com/uploads/image/image/24923/medium_thumb_e31df6ca67b7e6390cb4e019f9a614.jpg') center center no-repeat; background-size: cover;">
   <div class="mdl-card__media product-image">
     <a href="https://solda.io/products/6879">
       <div class="mdl-card__title">
@@ -577,7 +614,7 @@
 
 
 
-<div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--6-col mdl-cell--12-col-phone mdl-cell--8-col-tablet product full-card" style="background: url('https://solda-production.s3-ap-northeast-1.amazonaws.com/uploads/image/image/44078/medium_thumb_e31df6ca67b7e6390cb4e019f9a614.jpg') center center no-repeat; background-size: cover;">
+<div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--8-col mdl-cell--12-col-phone mdl-cell--8-col-tablet product full-card" style="background: url('https://solda-production.s3-ap-northeast-1.amazonaws.com/uploads/image/image/44078/medium_thumb_e31df6ca67b7e6390cb4e019f9a614.jpg') center center no-repeat; background-size: cover;">
   <div class="mdl-card__media product-image">
     <a href="https://solda.io/products/12480">
       <div class="mdl-card__title">
@@ -600,7 +637,7 @@
 
 
 
-<div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--6-col mdl-cell--12-col-phone mdl-cell--8-col-tablet product full-card" style="background: url('https://solda-production.s3-ap-northeast-1.amazonaws.com/uploads/image/image/74063/medium_thumb_de3854b8b89fe02dc3654a3007cd80.jpg') center center no-repeat; background-size: cover;">
+<div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col mdl-cell--12-col-phone mdl-cell--8-col-tablet product full-card" style="background: url('https://solda-production.s3-ap-northeast-1.amazonaws.com/uploads/image/image/74063/medium_thumb_de3854b8b89fe02dc3654a3007cd80.jpg') center center no-repeat; background-size: cover;">
   <div class="mdl-card__media product-image">
     <a href="https://solda.io/products/1107">
       <div class="mdl-card__title">
@@ -623,7 +660,7 @@
 
 
 
-<div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--6-col mdl-cell--12-col-phone mdl-cell--8-col-tablet product full-card" style="background: url('https://solda-production.s3-ap-northeast-1.amazonaws.com/uploads/image/image/91892/medium_thumb_7575af118903c263b56a60c7c9ffac.jpg') center center no-repeat; background-size: cover;">
+<div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col mdl-cell--12-col-phone mdl-cell--8-col-tablet product full-card" style="background: url('https://solda-production.s3-ap-northeast-1.amazonaws.com/uploads/image/image/91892/medium_thumb_7575af118903c263b56a60c7c9ffac.jpg') center center no-repeat; background-size: cover;">
   <div class="mdl-card__media product-image">
     <a href="https://solda.io/products/25858">
       <div class="mdl-card__title">
@@ -645,11 +682,11 @@
 
 
 
-<div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--6-col mdl-cell--12-col-phone mdl-cell--8-col-tablet product full-card" style="background: url('https://solda-production.s3-ap-northeast-1.amazonaws.com/uploads/image/image/60416/medium_thumb_e31df6ca67b7e6390cb4e019f9a614.jpg') center center no-repeat; background-size: cover;">
+<div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--8-col mdl-cell--12-col-phone mdl-cell--8-col-tablet product full-card" style="background: url('https://solda-production.s3-ap-northeast-1.amazonaws.com/uploads/image/image/60416/medium_thumb_e31df6ca67b7e6390cb4e019f9a614.jpg') center center no-repeat; background-size: cover;">
   <div class="mdl-card__media product-image">
     <a href="https://solda.io/products/17040">
       <div class="mdl-card__title">
-        <h1 class="mdl-card__title-text mdl-color-text--white">［紐約空運*獨家僅一件單品］純手工真皮革舊感肩背包</h1>
+        <h1 class="mdl-card__title-text mdl-color-text--white">純手工真皮革舊感肩背包</h1>
       </div>
     </a>
   </div>
@@ -667,7 +704,7 @@
 
 
 
-<div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--6-col mdl-cell--12-col-phone mdl-cell--8-col-tablet product full-card" style="background: url('https://solda-production.s3-ap-northeast-1.amazonaws.com/uploads/image/image/92361/medium_thumb_3daf29762d5573491649385244faf6.jpg') center center no-repeat; background-size: cover;">
+<div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--8-col mdl-cell--12-col-phone mdl-cell--8-col-tablet product full-card" style="background: url('https://solda-production.s3-ap-northeast-1.amazonaws.com/uploads/image/image/92361/medium_thumb_3daf29762d5573491649385244faf6.jpg') center center no-repeat; background-size: cover;">
   <div class="mdl-card__media product-image">
     <a href="https://solda.io/products/25984">
       <div class="mdl-card__title">
@@ -689,7 +726,7 @@
 
 
 
-<div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--6-col mdl-cell--12-col-phone mdl-cell--8-col-tablet product full-card" style="background: url('https://solda-production.s3-ap-northeast-1.amazonaws.com/uploads/image/image/82056/medium_thumb_7537014d57ea9c732447c9aa5beb31.JPG') center center no-repeat; background-size: cover;">
+<div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col mdl-cell--12-col-phone mdl-cell--8-col-tablet product full-card" style="background: url('https://solda-production.s3-ap-northeast-1.amazonaws.com/uploads/image/image/82056/medium_thumb_7537014d57ea9c732447c9aa5beb31.JPG') center center no-repeat; background-size: cover;">
   <div class="mdl-card__media product-image">
     <a href="產品網址">
       <div class="mdl-card__title">
@@ -713,7 +750,7 @@
 
 <div class="week-title mdl-cell mdl-cell--12-col mdl-cell--8-col-tablet">
   <h1 class="mdl-typography--display-1-color-contrast">
-    本週推薦商家
+    本期推薦商家
   </h1>
 </div>
 
@@ -725,7 +762,7 @@
   </div>
   <div class="mdl-card__supporting-text">
     <div class="meta">
-      <strong>貓三餅舖</strong><span>@mao3</span>
+      <strong>貓三餅舖</strong><br><span>@mow3</span>
     </div>
     一個嘴很挑的女子，不愛吃甜食，但卻樂於做出好吃甜點...
   </div>
@@ -736,14 +773,14 @@
 
 <div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--3-col mdl-cell--6-col-phone people">
   <div class="mdl-card__media product-image">
-    <a href="https://solda.io/ohhappyday"  style="background: url('https://solda-production.s3-ap-northeast-1.amazonaws.com/uploads/store/avatar/3887/square_large_2ec0183591c3b9e079a43031d922de.png') center center no-repeat; background-size: 120px;" data-adaptive-background data-ab-css-background>
+    <a href="https://solda.io/green-bakery"  style="background: url('https://solda-production.s3-ap-northeast-1.amazonaws.com/uploads/store/avatar/3887/square_large_2ec0183591c3b9e079a43031d922de.png') center center no-repeat; background-size: 120px;" data-adaptive-background data-ab-css-background>
     </a>
   </div>
   <div class="mdl-card__supporting-text">
     <div class="meta">
-      <strong>GREEN-BAKERY</strong><span>@green-bakery</span>
+      <strong>GREEN-BAKERY</strong><br><span>@green-bakery</span>
     </div>
-    Green Bakery源自於對人,環境與動物友善的原則,以愛為出發點...
+    Green Bakery 源自於對人,環境與動物友善的原則,以愛...
   </div>
 </div>
 
@@ -753,14 +790,14 @@
 
 <div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--3-col mdl-cell--6-col-phone people">
   <div class="mdl-card__media product-image">
-    <a href="http://solda.io"  style="background: url('https://solda-production.s3-ap-northeast-1.amazonaws.com/uploads/store/avatar/237/square_large_2ec0183591c3b9e079a43031d922de.png') center center no-repeat; background-size: 120px;" data-adaptive-background data-ab-css-background>
+    <a href="http://solda.io/diese-diese"  style="background: url('https://solda-production.s3-ap-northeast-1.amazonaws.com/uploads/store/avatar/237/square_large_2ec0183591c3b9e079a43031d922de.png') center center no-repeat; background-size: 120px;" data-adaptive-background data-ab-css-background>
     </a>
   </div>
   <div class="mdl-card__supporting-text">
     <div class="meta">
-      <strong>台灣diese-diese 雜貨研究所</strong><span>@diese-diese</span>
+      <strong>台灣diese-diese 雜貨研究所</strong><br><span>@diese-diese</span>
     </div>
-    我們是一家 專賣室內生活用品的台灣分店 總店在 日本關西地區 日本店家 成立...
+    我們是一家 專賣室內生活用品的台灣分店 總店在 日本...
   </div>
 </div>
 
@@ -773,9 +810,9 @@
   </div>
   <div class="mdl-card__supporting-text">
     <div class="meta">
-      <strong>Oh Happy Day 手工甜點</strong><span>@ohhappyday</span>
+      <strong>Oh Happy Day 手工甜點</strong><br><span>@ohhappyday</span>
     </div>
-    當英國廚師Jamie Oliver完全料理的時候，會露出喜悅的神情說：Happy Day...
+    當英國廚師Jamie Oliver完全料理的時候，會露出喜悅的神...
   </div>
 </div>
 
@@ -784,14 +821,13 @@
 
 <div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--3-col mdl-cell--6-col-phone people">
   <div class="mdl-card__media product-image">
-    <a href="http://solda.io"  style="background: url('https://solda-production.s3-ap-northeast-1.amazonaws.com/uploads/store/avatar/318/square_large_2ec0183591c3b9e079a43031d922de.png') center center no-repeat; background-size: 120px;" data-adaptive-background data-ab-css-background>
+    <a href="http://solda.io/yao1976"  style="background: url('https://solda-production.s3-ap-northeast-1.amazonaws.com/uploads/store/avatar/318/square_large_2ec0183591c3b9e079a43031d922de.png') center center no-repeat; background-size: 120px;" data-adaptive-background data-ab-css-background>
     </a>
   </div>
   <div class="mdl-card__supporting-text">
     <div class="meta">
-      <strong>柴窯火腿製造所</strong><span>@yao1976</span>
+      <strong>柴窯火腿製造所</strong><br><span>@yao1976</span>
     </div>
-    沒有商家介紹
   </div>
 </div>
 
@@ -802,23 +838,93 @@
 
 <div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--3-col mdl-cell--6-col-phone people">
   <div class="mdl-card__media product-image">
-    <a href="http://solda.io"  style="background: url('https://solda-production.s3-ap-northeast-1.amazonaws.com/uploads/store/avatar/170/square_large_2ec0183591c3b9e079a43031d922de.png') center center no-repeat; background-size: 120px;" data-adaptive-background data-ab-css-background>
+    <a href="http://solda.io/flavourlife"  style="background: url('https://solda-production.s3-ap-northeast-1.amazonaws.com/uploads/store/avatar/170/square_large_2ec0183591c3b9e079a43031d922de.png') center center no-repeat; background-size: 120px;" data-adaptive-background data-ab-css-background>
     </a>
   </div>
   <div class="mdl-card__supporting-text">
     <div class="meta">
-      <strong>淡味生活</strong><span>@flavourlife</span>
+      <strong>淡味生活</strong><br><span>@flavourlife</span>
     </div>
     淡味生活～餐瓷雜貨專販～
 
-器皿裝扮食物，食物調劑生活
-品美也價美的生活食器
+器皿裝扮食物，食物調劑...
   </div>
 </div>
 
 
 
 
+
+
+            </div><!-- grid -->
+
+            <footer class="mdl-mega-footer">
+            <div class="footer-wrapper">
+              <div class="mdl-mega-footer__middle-section">
+
+                <div class="mdl-mega-footer__drop-down-section">
+                  <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+                  <h1 class="mdl-mega-footer__heading">Features</h1>
+                  <ul class="mdl-mega-footer__link-list">
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Terms</a></li>
+                    <li><a href="#">Partners</a></li>
+                    <li><a href="#">Updates</a></li>
+                  </ul>
+                </div>
+
+                <div class="mdl-mega-footer__drop-down-section">
+                  <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+                  <h1 class="mdl-mega-footer__heading">Details</h1>
+                  <ul class="mdl-mega-footer__link-list">
+                    <li><a href="#">Specs</a></li>
+                    <li><a href="#">Tools</a></li>
+                    <li><a href="#">Resources</a></li>
+                  </ul>
+                </div>
+
+                <div class="mdl-mega-footer__drop-down-section">
+                  <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+                  <h1 class="mdl-mega-footer__heading">Technology</h1>
+                  <ul class="mdl-mega-footer__link-list">
+                    <li><a href="#">How it works</a></li>
+                    <li><a href="#">Patterns</a></li>
+                    <li><a href="#">Usage</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Contracts</a></li>
+                  </ul>
+                </div>
+
+                <div class="mdl-mega-footer__drop-down-section">
+                  <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+                  <h1 class="mdl-mega-footer__heading">FAQ</h1>
+                  <ul class="mdl-mega-footer__link-list">
+                    <li><a href="#">Questions</a></li>
+                    <li><a href="#">Answers</a></li>
+                    <li><a href="#">Contact us</a></li>
+                  </ul>
+                </div>
+
+              </div>
+
+              <div class="mdl-mega-footer__bottom-section">
+                <div class="mdl-logo">Title</div>
+                <ul class="mdl-mega-footer__link-list">
+                  <li><a href="#">Help</a></li>
+                  <li><a href="#">Privacy & Terms</a></li>
+                </ul>
+              </div>
+            </div><!-- footer wraper -->
+            </footer>
+
+          </main>
+
+        </div><!-- main-content -->
+
+      </div>
+
+    </body>
+</html>
 
 
             </div><!-- grid -->
