@@ -20,41 +20,46 @@ body {
   flex-grow: 1;
 }
 
-/* line 36, ../scss/main.scss */
+/* line 38, ../scss/main.scss */
+h1.mdl-card__title-text {
+  display: none;
+}
+
+/* line 42, ../scss/main.scss */
 a.logo {
   width: 200px;
   display: block;
   margin: 30px auto;
 }
-/* line 37, ../scss/main.scss */
+/* line 43, ../scss/main.scss */
 a.logo img {
   width: 200px;
   height: 200px;
 }
 
-/* line 46, ../scss/main.scss */
+/* line 52, ../scss/main.scss */
 .mdl-card__media {
   background-color: white;
 }
 
-/* line 50, ../scss/main.scss */
+/* line 56, ../scss/main.scss */
 .mdl-card {
-  min-height: 360px;
+  min-height: 400px;
 }
 
-/* line 54, ../scss/main.scss */
+/* line 60, ../scss/main.scss */
 .main-content {
   max-width: 900px;
   margin: 0 auto;
 }
 
-/* line 59, ../scss/main.scss */
+/* line 65, ../scss/main.scss */
 .avatar {
   display: flex;
   align-items: center;
   text-decoration: none;
 }
-/* line 63, ../scss/main.scss */
+/* line 69, ../scss/main.scss */
 .avatar img {
   width: 42px;
   height: 42px;
@@ -62,26 +67,26 @@ a.logo img {
   border: 1px solid rgba(0, 0, 0, 0.0980392);
   border-radius: 2px;
 }
-/* line 70, ../scss/main.scss */
+/* line 76, ../scss/main.scss */
 .avatar div {
   padding-left: 16px;
   text-decoration: none;
   display: inline-block;
 }
-/* line 74, ../scss/main.scss */
+/* line 80, ../scss/main.scss */
 .avatar div strong {
   color: rgba(0, 0, 0, 0.87);
 }
-/* line 77, ../scss/main.scss */
+/* line 83, ../scss/main.scss */
 .avatar div span {
   color: #757575;
 }
 
-/* line 83, ../scss/main.scss */
+/* line 89, ../scss/main.scss */
 .product-image {
   background: transparent;
 }
-/* line 86, ../scss/main.scss */
+/* line 92, ../scss/main.scss */
 .product-image a {
   text-decoration: none;
   box-sizing: border-box;
@@ -90,19 +95,19 @@ a.logo img {
   vertical-align: bottom;
 }
 
-/* line 98, ../scss/main.scss */
+/* line 104, ../scss/main.scss */
 .mdl-card.intro-card {
   background: #ff828f;
 }
-/* line 100, ../scss/main.scss */
+/* line 106, ../scss/main.scss */
 .mdl-card.intro-card .mdl-card__media {
   background: #ff5e6f;
 }
-/* line 103, ../scss/main.scss */
+/* line 109, ../scss/main.scss */
 .mdl-card.intro-card .mdl-card__supporting-text {
   color: white;
 }
-/* line 107, ../scss/main.scss */
+/* line 113, ../scss/main.scss */
 .mdl-card.intro-card .issue-number {
   font-family: 'Roboto', sans-serif;
   font-style: 100;
@@ -111,67 +116,67 @@ a.logo img {
   font-size: 30px;
   line-height: 40px;
 }
-/* line 110, ../scss/main.scss */
+/* line 116, ../scss/main.scss */
 .mdl-card.intro-card .issue-number span {
   opacity: 0.54;
   font-size: 24px;
 }
 
-/* line 128, ../scss/main.scss */
+/* line 134, ../scss/main.scss */
 .product.full-card > .mdl-card__supporting-text {
   background: rgba(0, 0, 0, 0.3);
 }
-/* line 130, ../scss/main.scss */
+/* line 136, ../scss/main.scss */
 .product.full-card > .mdl-card__supporting-text span {
   color: rgba(255, 255, 255, 0.6);
 }
-/* line 133, ../scss/main.scss */
+/* line 139, ../scss/main.scss */
 .product.full-card > .mdl-card__supporting-text strong {
   color: white;
 }
 
-/* line 139, ../scss/main.scss */
+/* line 145, ../scss/main.scss */
 .product > .mdl-card__supporting-text {
   background: white;
   padding-right: 10%;
 }
 
-/* line 147, ../scss/main.scss */
+/* line 153, ../scss/main.scss */
 .post section {
   max-width: 520px;
   margin: 0 auto;
   padding: 16px 0 0 0;
   box-sizing: border-box;
 }
-/* line 152, ../scss/main.scss */
+/* line 158, ../scss/main.scss */
 .post section p {
   font-size: 15px;
 }
-/* line 156, ../scss/main.scss */
+/* line 162, ../scss/main.scss */
 .post .product-image a {
   height: 300px;
 }
 
-/* line 164, ../scss/main.scss */
+/* line 170, ../scss/main.scss */
 .mdl-card.people .product-image {
   background: white;
 }
-/* line 167, ../scss/main.scss */
+/* line 173, ../scss/main.scss */
 .mdl-card.people strong {
   color: rgba(0, 0, 0, 0.87);
   margin-right: 0.5em;
 }
-/* line 171, ../scss/main.scss */
+/* line 177, ../scss/main.scss */
 .mdl-card.people .meta {
   margin-bottom: 1em;
 }
 
-/* line 178, ../scss/main.scss */
+/* line 184, ../scss/main.scss */
 footer {
   margin-top: 80px;
 }
 
-/* line 182, ../scss/main.scss */
+/* line 188, ../scss/main.scss */
 .footer-wrapper {
   padding-left: 16px;
   max-width: 900px;
