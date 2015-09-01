@@ -54,7 +54,29 @@
               <a href="/" class="logo"><img src="img/logo2.svg" alt=""></a>
             </div>
 
-            <div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--8-col mdl-cell--12-col-phone mdl-cell--5-col-tablet product full-card" style="background: url('https://solda-production.s3-ap-northeast-1.amazonaws.com/uploads/image/image/7972/medium_thumb_c3fdd1c2b71d80975ae8e6a8a139cb.jpg') center center no-repeat; background-size: cover;">
+            <script type="text/javascript">
+   function showAndroidToast(toast) {
+       Android.showToast(toast);
+   }
+</script>
+
+<div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col mdl-cell--12-col-phone mdl-cell--12-col-tablet">
+  <div class="mdl-card__title">
+    <h1 class="mdl-card__title-text">Android Test</h1>
+  </div>
+  <div class="mdl-card__actions mdl-card--border">
+    <input type="button" value="Say hello" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" onClick="showAndroidToast('Hello Android!')" />
+    <input type="button" value="Yllan's Store" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" onClick="Android.showStore(yllan);" />
+    <input type="button" value="Product" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" onClick="Android.showProduct(10566);" />
+
+  </div>
+
+</div>
+
+
+<!-- Android Test -->
+
+<div class="mdl-card mdl-shadow--2dp mdl-cell mdl-cell--8-col mdl-cell--12-col-phone mdl-cell--5-col-tablet product full-card" style="background: url('https://solda-production.s3-ap-northeast-1.amazonaws.com/uploads/image/image/7972/medium_thumb_c3fdd1c2b71d80975ae8e6a8a139cb.jpg') center center no-repeat; background-size: cover;">
   <div class="mdl-card__media product-image">
     <a href="https://solda.io/products/2115">
       <div class="mdl-card__title">
