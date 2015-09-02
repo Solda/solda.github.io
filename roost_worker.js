@@ -1,1 +1,87 @@
-"use strict";function parseQueryString(o){var n={};return o.split("&").forEach(function(o){var t=o.split("="),i=t[0],e=decodeURIComponent(t[1]);i in n?n[i].push(e):n[i]=[e]}),n}function handleNotificationClick(o){_roostSW.logging&&console.log("Notification clicked: ",o.notification),o.notification.close();var n=o.notification.icon;if(n.indexOf("?")>-1){var t=n.split("?")[1],i=parseQueryString(t);if(i.url&&1==i.url.length)return _roostSW.logging&&console.log("Opening URL: "+i.url[0]),clients.openWindow(i.url[0])}console.log("Failed to redirect to notification for iconURL: "+n)}function showNotification(o,n,t,i){var e={body:t,tag:"roost",icon:_roostSW.host+"/api/browser/logo?size=100&direct=true&appKey="+_roostSW.appKey+"&noteID="+o+"&url="+encodeURIComponent(i)};return self.registration.showNotification(n,e)}var _roostSW={version:2,logging:!0,appKey:"pjzx8kv0hn7882woj032dc8cgbl16cg5",host:"https://go.goroost.com"};self.addEventListener("install",function(o){o.waitUntil(self.skipWaiting())}),self.addEventListener("activate",function(){_roostSW.logging&&console.log("Activated Roost ServiceWorker version: "+_roostSW.version)}),self.addEventListener("push",function(o){_roostSW.logging&&console.log("push listener",o),o.waitUntil(self.registration.pushManager.getSubscription().then(function(o){var n=null;return n="subscriptionId"in o?o.subscriptionId:o.endpoint,fetch(_roostSW.host+"/api/browser/notifications?version="+_roostSW.version+"&appKey="+_roostSW.appKey+"&deviceID="+encodeURIComponent(n)).then(function(o){return o.json().then(function(o){_roostSW.logging&&console.log(o);for(var n=[],t=0;o.notifications.length>t;t++){var i=o.notifications[t];_roostSW.logging&&console.log("Showing notification: "+i.body);var e="/roost.html?noteID="+i.roost_note_id+"&sendID="+i.roost_send_id+"&body="+encodeURIComponent(i.body);n.push(showNotification(i.roost_note_id,i.title,i.body,e,_roostSW.appKey))}return Promise.all(n)})})}))}),self.addEventListener("notificationclick",function(o){_roostSW.logging&&console.log("notificationclick listener",o),o.waitUntil(handleNotificationClick(o))});
+"use strict";
+//var _roostSW = {version: 1, logging: true, appKey:"pjzx8kv0hn7882woj032dc8cgbl16cg5", host: "http://localhost:8081", baseURL: "http://localhost:8081"};
+
+var _roostSW = {
+    version: 2,
+    logging: true,
+    appKey: "pjzx8kv0hn7882woj032dc8cgbl16cg5",
+    host: "https://go.goroost.com"
+};
+
+self.addEventListener('install', function(evt) {
+    //Automatically take over the previous worker.
+    evt.waitUntil(self.skipWaiting());
+});
+
+self.addEventListener('activate', function(evt) {
+    if (_roostSW.logging) console.log("Activated Roost ServiceWorker version: " + _roostSW.version);
+});
+
+//Handle the push received event.
+self.addEventListener('push', function(evt) {
+    if (_roostSW.logging) console.log("push listener", evt);
+    evt.waitUntil(self.registration.pushManager.getSubscription().then(function(subscription) {
+        var regID = null;
+        if ('subscriptionId' in subscription) {
+            regID = subscription.subscriptionId;
+        } else {
+            //in Chrome 44+ and other SW browsers, reg ID is part of endpoint, send the whole thing and let the server figure it out.
+            regID = subscription.endpoint;
+        }
+        return fetch(_roostSW.host + "/api/browser/notifications?version=" + _roostSW.version + "&appKey=" + _roostSW.appKey + "&deviceID=" + encodeURIComponent(regID)).then(function(response) {
+            return response.json().then(function(json) {
+                if (_roostSW.logging) console.log(json);
+                var promises = [];
+                for (var i = 0; i < json.notifications.length; i++) {
+                    var note = json.notifications[i];
+                    if (_roostSW.logging) console.log("Showing notification: " + note.body);
+                    var url = "/roost.html?noteID=" + note.roost_note_id + "&sendID=" + note.roost_send_id + "&body=" + encodeURIComponent(note.body);
+                    promises.push(showNotification(note.roost_note_id, note.title, note.body, url, _roostSW.appKey));
+                }
+                return Promise.all(promises);
+            });
+        });
+    }));
+});
+
+self.addEventListener('notificationclick', function(evt) {
+    if (_roostSW.logging) console.log("notificationclick listener", evt);
+    evt.waitUntil(handleNotificationClick(evt));
+});
+
+function parseQueryString(queryString) {
+    var qd = {};
+    queryString.split("&").forEach(function (item) {
+        var parts = item.split("=");
+        var k = parts[0];
+        var v = decodeURIComponent(parts[1]);
+        (k in qd) ? qd[k].push(v) : qd[k] = [v, ]
+    });
+    return qd;
+}
+
+//Utility function to handle the click
+function handleNotificationClick(evt) {
+    if (_roostSW.logging) console.log("Notification clicked: ", evt.notification);
+    evt.notification.close();
+    var iconURL = evt.notification.icon;
+    if (iconURL.indexOf("?") > -1) {
+        var queryString = iconURL.split("?")[1];
+        var query = parseQueryString(queryString);
+        if (query.url && query.url.length == 1) {
+            if (_roostSW.logging) console.log("Opening URL: " + query.url[0]);
+            return clients.openWindow(query.url[0]);
+        }
+    }
+    console.log("Failed to redirect to notification for iconURL: " + iconURL);
+}
+
+//Utility function to actually show the notification.
+function showNotification(noteID, title, body, url, appKey) {
+    var options = {
+        body: body,
+        tag: "roost",
+        icon: _roostSW.host + '/api/browser/logo?size=100&direct=true&appKey=' + _roostSW.appKey + '&noteID='+ noteID + '&url=' + encodeURIComponent(url)
+    };
+    return self.registration.showNotification(title, options);
+}
