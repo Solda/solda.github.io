@@ -1,7 +1,7 @@
 /* line 3, ../scss/main.scss */
 body {
   background: #fafafa;
-  font-family: "Noto Sans CJK TC";
+  font-family: "Noto Sans CJK TC", sans-serif;
 }
 
 /* line 13, ../scss/main.scss */
