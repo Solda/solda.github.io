@@ -36,10 +36,14 @@
            }
         </script>
 
-        <!-- jQuery -->
-        <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-        <script src="js/jquery.lazyload.min.js"></script>
-        <script src="js/effect.js"></script>
+        <!-- Lazy load -->
+        <script src="http://cdn.jsdelivr.net/blazy/latest/blazy.min.js"></script>
+        <script>
+            ;(function() {
+                // Initialize
+                var bLazy = new Blazy();
+            })();
+        </script>
 
 
     </head>
