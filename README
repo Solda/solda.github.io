@@ -1,8 +1,0 @@
-# Notes
-
-1. Install Fire.app
-2. Set CSS/JS build folders CSS: css-prefix, JS: js.
-3. Install Gulp + Autoprefix
-4. Run Gulp
-5. Build project with Fire.app
-6. Deploy
