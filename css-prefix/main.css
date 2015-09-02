@@ -6,28 +6,18 @@ body {
 
 /* line 13, ../scss/main.scss */
 .labs-outter, .mdl-card, .product-image, .product-image a {
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-justify-content: flex-end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 /* line 17, ../scss/main.scss */
 .labs-outter > div.labs-grow, .mdl-card > div.labs-grow, .product-image > div.labs-grow, .product-image a > div.labs-grow {
-  -webkit-flex-grow: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  flex-grow: 1;
 }
 
 /* line 27, ../scss/main.scss */
 .mdl-card__media {
-  -webkit-flex-grow: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  flex-grow: 1;
 }
 
 /* line 38, ../scss/main.scss */
@@ -65,12 +55,8 @@ a.logo img {
 
 /* line 65, ../scss/main.scss */
 .avatar {
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   text-decoration: none;
 }
 /* line 69, ../scss/main.scss */
@@ -104,9 +90,7 @@ a.logo img {
 .product-image a {
   text-decoration: none;
   box-sizing: border-box;
-  -webkit-flex-grow: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  flex-grow: 1;
   background: transparent;
   vertical-align: bottom;
 }
@@ -199,5 +183,3 @@ footer {
   margin: 0 auto;
   margin-top: 45px;
 }
-
-/*# sourceMappingURL=main.css.map */
