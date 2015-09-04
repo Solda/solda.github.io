@@ -1,49 +1,52 @@
 <!doctype html>
 <html class="no-js" lang="">
     <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<title>手打好物，每週精選 — SOLDA / 手機三十秒開賣，通販不求人。 </title>
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <!-- Add to homescreen for Chrome on Android -->
-        <meta name="mobile-web-app-capable" content="yes">
-        <link rel="icon" sizes="192x192" href="images/touch/chrome-touch-icon-192x192.png">
+<!-- Add to homescreen for Chrome on Android -->
+<meta name="mobile-web-app-capable" content="yes">
+<link rel="icon" sizes="192x192" href="images/touch/chrome-touch-icon-192x192.png">
 
-        <!-- Add to homescreen for Safari on iOS -->
-        <meta name="apple-mobile-web-app-capable" content="yes">
-        <meta name="apple-mobile-web-app-status-bar-style" content="black">
-        <meta name="apple-mobile-web-app-title" content="Material Design Lite">
-        <link rel="apple-touch-icon-precomposed" href="apple-touch-icon-precomposed.png">
+<!-- Add to homescreen for Safari on iOS -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="apple-mobile-web-app-title" content="Material Design Lite">
+<link rel="apple-touch-icon-precomposed" href="apple-touch-icon-precomposed.png">
 
-        <!-- Tile icon for Win8 (144x144 + tile color) -->
-        <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
-        <meta name="msapplication-TileColor" content="#3372DF">
+<!-- Tile icon for Win8 (144x144 + tile color) -->
+<meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
+<meta name="msapplication-TileColor" content="#3372DF">
 
-        <!-- Material Design -->
-        <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.4/material.blue_grey-pink.min.css" /> 
-        <script src="https://storage.googleapis.com/code.getmdl.io/1.0.2/material.min.js"></script>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<!-- Material Design -->
+<link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.4/material.blue_grey-pink.min.css" /> 
+<script src="https://storage.googleapis.com/code.getmdl.io/1.0.2/material.min.js"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
-        <!-- Leo's Design -->
-        <link rel="stylesheet" href="css/main.css">
+<!-- Leo's Design -->
+<link rel="stylesheet" href="css/main.css">
 
-        <!-- Android Binding -->
-        <script type="text/javascript">
-           function showAndroidToast(toast) {
-               Android.showToast(toast);
-           }
-        </script>
+<!-- Android Binding -->
+<script type="text/javascript">
+	var loc = window.location.href+'';
+	if (loc.indexOf('http://solda')==0){
+	    window.location.href = loc.replace('http://','https://');
+	}
+   function showAndroidToast(toast) {
+       Android.showToast(toast);
+   }
+</script>
 
-        <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-        <script src="js/jquery.lazyload.min.js" type="text/javascript"></script>
-        <script src="js/effect.js"></script>
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="js/jquery.lazyload.min.js" type="text/javascript"></script>
+<script src="js/effect.js"></script>
 
-        <script src='//cdn.goroost.com/roostjs/pjzx8kv0hn7882woj032dc8cgbl16cg5' async></script>
-
+<script src='//cdn.goroost.com/roostjs/pjzx8kv0hn7882woj032dc8cgbl16cg5' async></script>
     </head>
-    <body>
+    <body class="web">
 
       <div class="mdl-layout__container big-bg">
 
@@ -64,71 +67,31 @@
 
 <ol>
   <li>Install Fire.app</li>
-  <li>Run Sublime Text Autoprefixer plugin on CSS files.</li>
   <li>Build project with Fire.app</li>
-  <li>Deploy</li>
+  <li>ROOST files are already in solda.github.io folder</li>
 </ol>
+
+<h1 id="layout">Layout</h1>
+
+<ul>
+  <li>index : <code>_layout.html.erb</code> with <code>body.web</code></li>
+  <li>android and iphone : <code>_mobile_layout.html.erb</code> with <code>body.modile</code></li>
+</ul>
 
 
             </div><!-- grid -->
 
-            <footer class="mdl-mega-footer">
-            <div class="footer-wrapper">
-              <div class="mdl-mega-footer__middle-section">
-
-                <div class="mdl-mega-footer__drop-down-section">
-                  <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
-                  <h1 class="mdl-mega-footer__heading">手打拍賣</h1>
-                  <ul class="mdl-mega-footer__link-list">
-                    <li><a href="http://solda.io">手打官網：馬上開店</a></li>
-                    <li><a href="https://www.facebook.com/SoldaApp">Facebook 粉絲專頁</a></li>
-                    <li><a href="https://solda-app.uservoice.com">支援服務</a></li>
-                  </ul>
-                </div>
-<!-- 
-                <div class="mdl-mega-footer__drop-down-section">
-                  <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
-                  <h1 class="mdl-mega-footer__heading">Details</h1>
-                  <ul class="mdl-mega-footer__link-list">
-                    <li><a href="#">Specs</a></li>
-                    <li><a href="#">Tools</a></li>
-                    <li><a href="#">Resources</a></li>
-                  </ul>
-                </div>
-
-                <div class="mdl-mega-footer__drop-down-section">
-                  <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
-                  <h1 class="mdl-mega-footer__heading">Technology</h1>
-                  <ul class="mdl-mega-footer__link-list">
-                    <li><a href="#">How it works</a></li>
-                    <li><a href="#">Patterns</a></li>
-                    <li><a href="#">Usage</a></li>
-                    <li><a href="#">Products</a></li>
-                    <li><a href="#">Contracts</a></li>
-                  </ul>
-                </div>
-
-                <div class="mdl-mega-footer__drop-down-section">
-                  <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
-                  <h1 class="mdl-mega-footer__heading">FAQ</h1>
-                  <ul class="mdl-mega-footer__link-list">
-                    <li><a href="#">Questions</a></li>
-                    <li><a href="#">Answers</a></li>
-                    <li><a href="#">Contact us</a></li>
-                  </ul>
-                </div>
-
-              </div> -->
-<!-- 
-              <div class="mdl-mega-footer__bottom-section">
-                <div class="mdl-logo">Title</div>
-                <ul class="mdl-mega-footer__link-list">
-                  <li><a href="#">Help</a></li>
-                  <li><a href="#">Privacy & Terms</a></li>
-                </ul>
-              </div> -->
-            </div><!-- footer wraper -->
-            </footer>
+            <footer class="mdl-mini-footer">
+  <div class="mdl-mini-footer__left-section">
+    <div class="mdl-logo"><img src="img/solda-logo.svg" alt=""></div>
+    <ul class="mdl-mini-footer__link-list">
+      <li><a href="https://solda.io">手打拍賣官方網站</a></li>
+      <li><a href="https://www.facebook.com/SoldaApp">Facebook 粉絲專頁</a></li>
+      <li><a href="https://solda-app.uservoice.com/">支援服務</a></li>
+      <li><a href="mailto: hello@solda.io">合作聯繫</a></li>
+    </ul>
+  </div>
+</footer>
 
           </main>
 
