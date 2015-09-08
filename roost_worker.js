@@ -1,10 +1,10 @@
 "use strict";
-//var _roostSW = {version: 1, logging: true, appKey:"pjzx8kv0hn7882woj032dc8cgbl16cg5", host: "http://localhost:8081", baseURL: "http://localhost:8081"};
+//var _roostSW = {version: 1, logging: true, appKey:"552diyl7s5ok25t8x5343t6hzd87qc60", host: "http://localhost:8081", baseURL: "http://localhost:8081"};
 
 var _roostSW = {
     version: 2,
     logging: true,
-    appKey: "pjzx8kv0hn7882woj032dc8cgbl16cg5",
+    appKey: "552diyl7s5ok25t8x5343t6hzd87qc60",
     host: "https://go.goroost.com"
 };
 
