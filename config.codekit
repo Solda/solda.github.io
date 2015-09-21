@@ -85,17 +85,6 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/Build.workflow\/Contents\/QuickLook\/Preview.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 115611,
-		"inputAbbreviatedPath": "\/Build.workflow\/Contents\/QuickLook\/Preview.png",
-		"outputAbbreviatedPath": "\/Build.workflow\/Contents\/QuickLook\/Preview.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
 	"\/config.rb": {
 		"fileType": 131072,
 		"ignore": 0,
